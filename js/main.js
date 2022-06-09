@@ -11,12 +11,13 @@ elForm.addEventListener("submit", function(e){
     var elInputVal = elInput.value;
     var elSelectVal = elSelect.value;
     
-    var totalResult = elInputVal / elSelectVal;
+    var totalResult = elInputVal * elSelectVal;
     
-    elResult.textContent = totalResult.toFixed(2);
+    elResult.textContent = totalResult;
     
 
     if (elInputVal <= 0 ){
         elResult.textContent = ("Warning !!!")
     }
 })
+
